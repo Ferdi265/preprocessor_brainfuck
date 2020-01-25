@@ -68,7 +68,7 @@
 #elif (PRINT) == 33
 !
 #elif (PRINT) == 34
-"
+'"'
 #elif (PRINT) == 35
 '#'
 #elif (PRINT) == 36
@@ -78,7 +78,7 @@ $
 #elif (PRINT) == 38
 &
 #elif (PRINT) == 39
-'
+'\''
 #elif (PRINT) == 40
 (
 #elif (PRINT) == 41
