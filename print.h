@@ -256,261 +256,261 @@ z
 #elif (PRINT) == 127
 0x7f
 #elif (PRINT) == 128
-128
+0x80
 #elif (PRINT) == 129
-129
+0x81
 #elif (PRINT) == 130
-130
+0x82
 #elif (PRINT) == 131
-131
+0x83
 #elif (PRINT) == 132
-132
+0x84
 #elif (PRINT) == 133
-133
+0x85
 #elif (PRINT) == 134
-134
+0x86
 #elif (PRINT) == 135
-135
+0x87
 #elif (PRINT) == 136
-136
+0x88
 #elif (PRINT) == 137
-137
+0x89
 #elif (PRINT) == 138
-138
+0x8a
 #elif (PRINT) == 139
-139
+0x8b
 #elif (PRINT) == 140
-140
+0x8c
 #elif (PRINT) == 141
-141
+0x8d
 #elif (PRINT) == 142
-142
+0x8e
 #elif (PRINT) == 143
-143
+0x8f
 #elif (PRINT) == 144
-144
+0x90
 #elif (PRINT) == 145
-145
+0x91
 #elif (PRINT) == 146
-146
+0x92
 #elif (PRINT) == 147
-147
+0x93
 #elif (PRINT) == 148
-148
+0x94
 #elif (PRINT) == 149
-149
+0x95
 #elif (PRINT) == 150
-150
+0x96
 #elif (PRINT) == 151
-151
+0x97
 #elif (PRINT) == 152
-152
+0x98
 #elif (PRINT) == 153
-153
+0x99
 #elif (PRINT) == 154
-154
+0x9a
 #elif (PRINT) == 155
-155
+0x9b
 #elif (PRINT) == 156
-156
+0x9c
 #elif (PRINT) == 157
-157
+0x9d
 #elif (PRINT) == 158
-158
+0x9e
 #elif (PRINT) == 159
-159
+0x9f
 #elif (PRINT) == 160
-160
+0xa0
 #elif (PRINT) == 161
-161
+0xa1
 #elif (PRINT) == 162
-162
+0xa2
 #elif (PRINT) == 163
-163
+0xa3
 #elif (PRINT) == 164
-164
+0xa4
 #elif (PRINT) == 165
-165
+0xa5
 #elif (PRINT) == 166
-166
+0xa6
 #elif (PRINT) == 167
-167
+0xa7
 #elif (PRINT) == 168
-168
+0xa8
 #elif (PRINT) == 169
-169
+0xa9
 #elif (PRINT) == 170
-170
+0xaa
 #elif (PRINT) == 171
-171
+0xab
 #elif (PRINT) == 172
-172
+0xac
 #elif (PRINT) == 173
-173
+0xad
 #elif (PRINT) == 174
-174
+0xae
 #elif (PRINT) == 175
-175
+0xaf
 #elif (PRINT) == 176
-176
+0xb0
 #elif (PRINT) == 177
-177
+0xb1
 #elif (PRINT) == 178
-178
+0xb2
 #elif (PRINT) == 179
-179
+0xb3
 #elif (PRINT) == 180
-180
+0xb4
 #elif (PRINT) == 181
-181
+0xb5
 #elif (PRINT) == 182
-182
+0xb6
 #elif (PRINT) == 183
-183
+0xb7
 #elif (PRINT) == 184
-184
+0xb8
 #elif (PRINT) == 185
-185
+0xb9
 #elif (PRINT) == 186
-186
+0xba
 #elif (PRINT) == 187
-187
+0xbb
 #elif (PRINT) == 188
-188
+0xbc
 #elif (PRINT) == 189
-189
+0xbd
 #elif (PRINT) == 190
-190
+0xbe
 #elif (PRINT) == 191
-191
+0xbf
 #elif (PRINT) == 192
-192
+0xc0
 #elif (PRINT) == 193
-193
+0xc1
 #elif (PRINT) == 194
-194
+0xc2
 #elif (PRINT) == 195
-195
+0xc3
 #elif (PRINT) == 196
-196
+0xc4
 #elif (PRINT) == 197
-197
+0xc5
 #elif (PRINT) == 198
-198
+0xc6
 #elif (PRINT) == 199
-199
+0xc7
 #elif (PRINT) == 200
-200
+0xc8
 #elif (PRINT) == 201
-201
+0xc9
 #elif (PRINT) == 202
-202
+0xca
 #elif (PRINT) == 203
-203
+0xcb
 #elif (PRINT) == 204
-204
+0xcc
 #elif (PRINT) == 205
-205
+0xcd
 #elif (PRINT) == 206
-206
+0xce
 #elif (PRINT) == 207
-207
+0xcf
 #elif (PRINT) == 208
-208
+0xd0
 #elif (PRINT) == 209
-209
+0xd1
 #elif (PRINT) == 210
-210
+0xd2
 #elif (PRINT) == 211
-211
+0xd3
 #elif (PRINT) == 212
-212
+0xd4
 #elif (PRINT) == 213
-213
+0xd5
 #elif (PRINT) == 214
-214
+0xd6
 #elif (PRINT) == 215
-215
+0xd7
 #elif (PRINT) == 216
-216
+0xd8
 #elif (PRINT) == 217
-217
+0xd9
 #elif (PRINT) == 218
-218
+0xda
 #elif (PRINT) == 219
-219
+0xdb
 #elif (PRINT) == 220
-220
+0xdc
 #elif (PRINT) == 221
-221
+0xdd
 #elif (PRINT) == 222
-222
+0xde
 #elif (PRINT) == 223
-223
+0xdf
 #elif (PRINT) == 224
-224
+0xe0
 #elif (PRINT) == 225
-225
+0xe1
 #elif (PRINT) == 226
-226
+0xe2
 #elif (PRINT) == 227
-227
+0xe3
 #elif (PRINT) == 228
-228
+0xe4
 #elif (PRINT) == 229
-229
+0xe5
 #elif (PRINT) == 230
-230
+0xe6
 #elif (PRINT) == 231
-231
+0xe7
 #elif (PRINT) == 232
-232
+0xe8
 #elif (PRINT) == 233
-233
+0xe9
 #elif (PRINT) == 234
-234
+0xea
 #elif (PRINT) == 235
-235
+0xeb
 #elif (PRINT) == 236
-236
+0xec
 #elif (PRINT) == 237
-237
+0xed
 #elif (PRINT) == 238
-238
+0xee
 #elif (PRINT) == 239
-239
+0xef
 #elif (PRINT) == 240
-240
+0xf0
 #elif (PRINT) == 241
-241
+0xf1
 #elif (PRINT) == 242
-242
+0xf2
 #elif (PRINT) == 243
-243
+0xf3
 #elif (PRINT) == 244
-244
+0xf4
 #elif (PRINT) == 245
-245
+0xf5
 #elif (PRINT) == 246
-246
+0xf6
 #elif (PRINT) == 247
-247
+0xf7
 #elif (PRINT) == 248
-248
+0xf8
 #elif (PRINT) == 249
-249
+0xf9
 #elif (PRINT) == 250
-250
+0xfa
 #elif (PRINT) == 251
-251
+0xfb
 #elif (PRINT) == 252
-252
+0xfc
 #elif (PRINT) == 253
-253
+0xfd
 #elif (PRINT) == 254
-254
+0xfe
 #elif (PRINT) == 255
-255
+0xff
 #else
 FATAL: PRINT is not a valid number
 #   error "invalid number"
