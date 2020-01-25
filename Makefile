@@ -76,7 +76,7 @@ literal_C: gen_literal.sh
 	./$^ Cr $(MAX_CODE) > literals/Cr.h
 
 shift_I.h: gen_shift.sh
-	./$^ I $(MAX_INPUT) $(MAX_INPUT) > $@
+	./$^ I $(MAX_INPUT) 0 > $@
 
 .PHONY: literal_I
 literal_I: gen_literal.sh
