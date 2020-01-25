@@ -34,9 +34,14 @@
 #           undef STATE
 #           define STATE RSKIP
 #           define NESTCOUNT 0
+#           include "rshift_C.h"
 #       endif
+#   elif C0 == 'X'
+#       define HALT 1
 #   endif
-#   include "shift_C.h"
+#   if STATE == EXECUTE
+#       include "shift_C.h"
+#   endif
 #elif STATE == SKIP
 #   if C0 == '['
 #       define NESTCOUNT_NEXT (NESTCOUNT + 1)
@@ -61,13 +66,14 @@
 #           undef STATE
 #           define STATE EXECUTE
 #           undef NESTCOUNT
-#           include "shift_C.h"
 #       else
 #           define NESTCOUNT_NEXT (NESTCOUNT - 1)
 #           include "literals/NESTCOUNT.h"
 #       endif
 #   endif
-#   include "rshift_C.h"
+#   if STATE == RSKIP
+#       include "rshift_C.h"
+#   endif
 #endif
 #
 #if Cc == 0
