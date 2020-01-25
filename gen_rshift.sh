@@ -8,7 +8,7 @@ echo "#   error \"${v} backbuffer contains no more values\""
 echo "#endif"
 echo "#define ${v}c_NEXT (${v}c + 1)"
 echo "#include \"literals/${v}c.h\""
-echo "#define ${v}r_NEXT (${v}r - 1)"
+echo "#define ${v}r_NEXT (${v}r > 0 ? ${v}r - 1 : 0)"
 echo "#include \"literals/${v}r.h\""
 
 for i in $(seq $((length - 1)) -1 1); do
