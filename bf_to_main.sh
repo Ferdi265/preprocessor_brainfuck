@@ -3,8 +3,9 @@ prog="$1"
 input="${2:-/dev/null}"
 
 i=0
-while read -rn1 char; do
-    code=$(printf "0x%02x" "'$char")
+while IFS="" read -rn1 char; do
+    [[ -z "$char" ]] && break
+    code=$(printf "0x%02x" "'$char'")
     echo "#define C$i $code"
     i=$((i + 1))
 done < "$prog"
@@ -12,8 +13,9 @@ echo "#define Cc $i"
 echo
 
 i=0
-while read -rn1 char; do
-    code=$(printf "0x%02x" "'$char")
+while IFS="" read -rn1 char; do
+    [[ -z "$char" ]] && break
+    code=$(printf "0x%02x" "'$char'")
     echo "#define I$i $code"
     i=$((i + 1))
 done < "$input"
