@@ -9,7 +9,7 @@ MAX_INPUT = 1024
 MAX_TAPE = 1024
 
 VARIABLES = NESTCOUNT
-TARGETS = $(VARIABLES:%=literals/%.h) init_T.h shift_T.h rshift_T.h shift_C.h rshift_C.h
+TARGETS = $(VARIABLES:%=literals/%.h) init_T.h shift_T.h rshift_T.h shift_C.h rshift_C.h shift_I.h
 
 .PHONY: build
 build: $(TARGETS) bf_run_d literal_Tm literal_T literal_Cm literal_C literal_I
