@@ -39,7 +39,7 @@
 #   include "shift_C.h"
 #elif STATE == SKIP
 #   if C0 == '['
-#       define NEXT_NESTCOUNT (NESTCOUNT + 1)
+#       define NESTCOUNT_NEXT (NESTCOUNT + 1)
 #       include "literals/NESTCOUNT.h"
 #   elif C0 == ']'
 #       if NESTCOUNT == 0
@@ -47,14 +47,14 @@
 #           define STATE EXECUTE
 #           undef NESTCOUNT
 #       else
-#           define NEXT_NESTCOUNT (NESTCOUNT - 1)
+#           define NESTCOUNT_NEXT (NESTCOUNT - 1)
 #           include "literals/NESTCOUNT.h"
 #       endif
 #   endif
 #   include "shift_C.h"
 #elif STATE == RSKIP
 #   if C0 == ']'
-#       define NEXT_NESTCOUNT (NESTCOUNT + 1)
+#       define NESTCOUNT_NEXT (NESTCOUNT + 1)
 #       include "literals/NESTCOUNT.h"
 #   elif C0 == '['
 #       if NESTCOUNT == 0
@@ -63,7 +63,7 @@
 #           undef NESTCOUNT
 #           include "shift_C.h"
 #       else
-#           define NEXT_NESTCOUNT (NESTCOUNT - 1)
+#           define NESTCOUNT_NEXT (NESTCOUNT - 1)
 #           include "literals/NESTCOUNT.h"
 #       endif
 #   endif
