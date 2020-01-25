@@ -2,7 +2,7 @@
 #   error "please define Cc as the code length"
 #endif
 #ifndef Ic
-#   error "please define Cc as the input length"
+#   error "please define Ic as the input length"
 #endif
 #
 #include "bf_init.h"
