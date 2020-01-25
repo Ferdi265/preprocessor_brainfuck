@@ -1,0 +1,6 @@
+#define Tr 0
+#define Cr 0
+#define Ir 0
+#
+#define Tc @@MAX_TAPE@@
+#include "init_T.h"
