@@ -9,6 +9,7 @@ for i in $(seq 0 $max); do
 done
 echo "#else"
 echo "FATAL: ${name}_NEXT is not a valid number"
+echo "#   define HALT 1"
 echo "#   error \"invalid number\""
 echo "#endif"
 echo "#undef ${name}_NEXT"

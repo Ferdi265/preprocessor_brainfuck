@@ -4,6 +4,7 @@ length="$2"
 backlength="${3:-0}"
 
 echo "#if ${v}c == 0"
+echo "#   define HALT 1"
 echo "#   error \"${v} contains no more values\""
 echo "#endif"
 echo "#define ${v}c_NEXT (${v}c > 0 ? ${v}c - 1 : 0)"

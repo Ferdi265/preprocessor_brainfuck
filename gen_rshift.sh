@@ -4,6 +4,7 @@ length="$2"
 backlength="${3:-0}"
 
 echo "#if ${v}r == 0"
+echo "#   define HALT 1"
 echo "#   error \"${v} backbuffer contains no more values\""
 echo "#endif"
 echo "#define ${v}c_NEXT (${v}c + 1)"
