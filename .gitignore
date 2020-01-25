@@ -1,5 +1,6 @@
 literals/
 bf_run_d*.h
+bf_init.h
 init_T.h
 rshift_C.h
 rshift_T.h
