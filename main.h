@@ -104,8 +104,7 @@
 #define C103 0x2b
 #define C104 0x2b
 #define C105 0x2e
-#define C106 0x00
-
+#define C106 0x0a
 #define Cc 107
 
 #define Ic 0
