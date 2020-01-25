@@ -1,5 +1,3 @@
-CC = gcc
-
 RUNLOOP_DEPTH = 4
 RUNLOOP_WIDTH = 256
 
@@ -21,8 +19,8 @@ clean:
 	rm -f $(TARGETS)
 
 .PHONY: run
-run: main.h build
-	$(CC) -E $< | grep -vE '#|^$$'
+run: main.h
+	cpp $< | grep -vE '#|^$$'
 
 bf_init.h: bf_init.h.in
 	sed 's/@@MAX_TAPE@@/$(MAX_TAPE)/g' $^ > $@
