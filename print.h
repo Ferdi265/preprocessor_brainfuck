@@ -64,7 +64,7 @@
 #elif (PRINT) == 31
 0x1f
 #elif (PRINT) == 32
- 
+' '
 #elif (PRINT) == 33
 !
 #elif (PRINT) == 34
