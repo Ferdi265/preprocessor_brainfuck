@@ -45,9 +45,6 @@ opcode ]
 #           define NESTCOUNT 0
 #           include "rshift_C.h"
 #       endif
-#   elif C0 == 'X'
-opcode X
-#       define HALT 1
 #   endif
 #   if STATE == EXECUTE
 #       include "shift_C.h"
