@@ -17,12 +17,12 @@ for i in $(seq $((length - 1)) -1 1); do
     echo "#include \"literals/${v}${i}.h\""
 done
 
-for i in $(seq 1 "$backlength"); do
-    if [[ $i -eq 1 ]]; then
-        next="${v}0"
+for i in $(seq 0 $((backlength - 1))); do
+    if [[ $i -eq 0 ]]; then
+        echo "#define ${v}0_NEXT ${v}m$((i + 1))"
+        echo "#include \"literals/${v}0.h\""
     else
-        next="${v}m$((i - 1))"
+        echo "#define ${v}m${i}_NEXT ${v}m$((i + 1))"
+        echo "#include \"literals/${v}m${i}.h\""
     fi
-    echo "#define ${v}m${i}_NEXT $next"
-    echo "#include \"literals/${v}m${i}.h\""
 done
