@@ -17,7 +17,7 @@ build: $(TARGETS) bf_run_d literal_Tm literal_T literal_Cm literal_C literal_I
 .PHONY: clean
 clean:
 	rm -f literals/*
-	rm -f bf_run_d*.sh
+	rm -f bf_run_d*.h
 	rm -f $(TARGETS)
 
 .PHONY: run
