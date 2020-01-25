@@ -8,8 +8,8 @@ while read -rn1 char; do
     echo "#define C$i $code"
     i=$((i + 1))
 done < "$prog"
-echo
 echo "#define Cc $i"
+echo
 
 i=0
 while read -rn1 char; do
@@ -17,7 +17,6 @@ while read -rn1 char; do
     echo "#define I$i $code"
     i=$((i + 1))
 done < "$input"
-echo
 echo "#define Ic $i"
 
 echo
