@@ -41,9 +41,14 @@ opcode .
 #ifdef DEBUG
 opcode ,
 #endif
-#       define T0_NEXT I0
-#       include "literals/T0.h"
-#       include "shift_I.h"
+#       if Ic == 0
+#           define T0_NEXT 0
+#           include "literals/T0.h"
+#       else
+#           define T0_NEXT I0
+#           include "literals/T0.h"
+#           include "shift_I.h"
+#       endif
 #   elif C0 == '['
 #ifdef DEBUG
 opcode [
