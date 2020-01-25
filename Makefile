@@ -1,5 +1,11 @@
 CPP = cpp
+
+DEBUG = 0
+ifeq ($(DEBUG),1)
+CPPFLAGS = -P -DDEBUG
+else
 CPPFLAGS = -P
+endif
 
 RUNLOOP_DEPTH = 4
 RUNLOOP_WIDTH = 256
