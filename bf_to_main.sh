@@ -3,22 +3,24 @@ prog="$1"
 input="${2:-/dev/null}"
 
 i=0
-while IFS="" read -rn1 char; do
-    [[ -z "$char" ]] && break
-    code=$(printf "0x%02x" "'$char'")
+hexdump="$(xxd -p "$prog")"
+while read -rn2 hex; do
+    [[ -z "$hex" ]] && continue
+    code="0x$hex"
     echo "#define C$i $code"
     i=$((i + 1))
-done < "$prog"
+done <<< "$hexdump"
 echo "#define Cc $i"
 echo
 
 i=0
-while IFS="" read -rn1 char; do
-    [[ -z "$char" ]] && break
-    code=$(printf "0x%02x" "'$char'")
+hexdump="$(xxd -p "$input")"
+while IFS="" read -rn2 hex; do
+    [[ -z "$hex" ]] && continue
+    code="0x$hex"
     echo "#define I$i $code"
     i=$((i + 1))
-done < "$input"
+done <<< "$hexdump"
 echo "#define Ic $i"
 
 echo
