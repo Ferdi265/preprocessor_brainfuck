@@ -1,4 +1,4 @@
-CPP = clang-cpp
+CPP = cpp
 CPPFLAGS = -P
 
 RUNLOOP_DEPTH = 4
