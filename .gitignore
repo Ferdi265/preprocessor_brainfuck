@@ -1,1 +1,8 @@
 literals/
+bf_run_d*.h
+init_T.h
+rshift_C.h
+rshift_T.h
+shift_C.h
+shift_I.h
+shift_T.h
