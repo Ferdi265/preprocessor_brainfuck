@@ -1,4 +1,5 @@
 CPP = clang-cpp
+CPPFLAGS = -P
 
 RUNLOOP_DEPTH = 4
 RUNLOOP_WIDTH = 256
@@ -22,7 +23,7 @@ clean:
 
 .PHONY: run
 run: main.h
-	$(CPP) $< | grep -vE '#|^$$'
+	$(CPP) $(CPPFLAGS) $< | grep -vE '#|^$$'
 
 bf_init.h: bf_init.h.in
 	sed 's/@@MAX_TAPE@@/$(MAX_TAPE)/g' $^ > $@
