@@ -12,7 +12,7 @@ VARIABLES = NESTCOUNT
 TARGETS = $(VARIABLES:%=literals/%.h) bf_init.h init_T.h shift_T.h rshift_T.h shift_C.h rshift_C.h shift_I.h
 
 .PHONY: build
-build: $(TARGETS) bf_run_d literal_Tm literal_T literal_Cm literal_C literal_I
+build: $(TARGETS) bf_run_d literal_T literal_C literal_I
 
 .PHONY: clean
 clean:
@@ -40,17 +40,16 @@ shift_T.h: gen_shift.sh
 rshift_T.h: gen_rshift.sh
 	./$^ T $(MAX_TAPE) $(MAX_TAPE) > $@
 
-.PHONY: literal_Tm
-literal_Tm: gen_literal.sh
+.PHONY: literal_T
+literal_T: gen_literal.sh
 	for i in $$(seq 0 $(MAX_TAPE)); do \
 		./$^ Tm$$i $(MAX_LITERAL) > literals/Tm$$i.h; \
 	done
-
-.PHONY: literal_T
-literal_T: gen_literal.sh
 	for i in $$(seq 0 $$(($(MAX_TAPE) - 1))); do \
 		./$^ T$$i $(MAX_LITERAL) > literals/T$$i.h; \
 	done
+	./$^ Tc $(MAX_TAPE) > literals/Tc.h
+	./$^ Tr $(MAX_TAPE) > literals/Tr.h
 
 shift_C.h: gen_shift.sh
 	./$^ C $(MAX_CODE) $(MAX_CODE) > $@
@@ -58,17 +57,16 @@ shift_C.h: gen_shift.sh
 rshift_C.h: gen_rshift.sh
 	./$^ C $(MAX_CODE) $(MAX_CODE) > $@
 
-.PHONY: literal_Cm
-literal_Cm: gen_literal.sh
+.PHONY: literal_C
+literal_C: gen_literal.sh
 	for i in $$(seq 0 $(MAX_CODE)); do \
 		./$^ Cm$$i $(MAX_LITERAL) > literals/Cm$$i.h; \
 	done
-
-.PHONY: literal_C
-literal_C: gen_literal.sh
 	for i in $$(seq 0 $$(($(MAX_CODE) - 1))); do \
 		./$^ C$$i $(MAX_LITERAL) > literals/C$$i.h; \
 	done
+	./$^ Cc $(MAX_CODE) > literals/Cc.h
+	./$^ Cr $(MAX_CODE) > literals/Cr.h
 
 shift_I.h: gen_shift.sh
 	./$^ I $(MAX_INPUT) $(MAX_INPUT) > $@
@@ -78,6 +76,8 @@ literal_I: gen_literal.sh
 	for i in $$(seq 0 $$(($(MAX_INPUT) - 1))); do \
 		./$^ I$$i $(MAX_LITERAL) > literals/I$$i.h; \
 	done
+	./$^ Ic $(MAX_INPUT) > literals/Ic.h
+	./$^ Ir $(MAX_INPUT) > literals/Ir.h
 
 define LITERAL_template =
 literals/$(1).h: gen_literal.sh
