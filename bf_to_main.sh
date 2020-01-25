@@ -1,6 +1,6 @@
 #!/bin/bash
 prog="$1"
-input="$2"
+input="${2:-/dev/null}"
 
 i=0
 while read -rn1 char; do
